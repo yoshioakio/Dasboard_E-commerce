@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 
-final_all_df = pd.read_csv("all_data.csv") 
+final_all_df = pd.read_csv("../dashboard/all_data.csv") 
 
 st.set_page_config(layout="wide")
 
