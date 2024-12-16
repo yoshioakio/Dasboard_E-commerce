@@ -1,10 +1,14 @@
+import os
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 
-final_all_df = pd.read_csv("../dashboard/all_data.csv") 
+
+csv_path = os.path.join(os.path.dirname(__file__), "all_data.csv")
+final_all_df = pd.read_csv(csv_path)
 
 st.set_page_config(layout="wide")
+
 
 st.markdown("<h1 style='text-align: center;'>Latihan Analisis Data E-Commerce dengan Python</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>made by fajri haryanto | muhamadfajri2804@gmail.com | mijimo</p>", unsafe_allow_html=True)
